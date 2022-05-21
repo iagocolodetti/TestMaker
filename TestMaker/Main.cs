@@ -6,8 +6,11 @@ using System.Windows.Forms;
 
 namespace TestMaker
 {
+    using INI;
     public partial class Main : Form
     {
+        private readonly string INI_FILE = Application.StartupPath + @"\TestMaker.ini";
+
         public Main()
         {
             InitializeComponent();
@@ -42,6 +45,38 @@ namespace TestMaker
             catch
             {
                 MessageBox.Show("Não foi possível carregar o arquivo de teste.\nTalvez o arquivo tenha sido modificado incorretamente.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void Main_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            try
+            {
+                IniFile ini = new IniFile(INI_FILE);
+                ini.IniWriteValue("LoadTest", "cbRandomQuestions", cbRandomQuestions.Checked.ToString());
+                ini.IniWriteValue("LoadTest", "cbRandomAnswers", cbRandomAnswers.Checked.ToString());
+            }
+            catch
+            {
+                MessageBox.Show("Não foi possível criar o arquivo de configuração.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+            if (File.Exists(INI_FILE))
+            {
+                try
+                {
+                    IniFile ini = new IniFile(INI_FILE);
+                    cbRandomQuestions.Checked = Boolean.Parse(ini.IniReadValue("LoadTest", "cbRandomQuestions"));
+                    cbRandomAnswers.Checked = Boolean.Parse(ini.IniReadValue("LoadTest", "cbRandomAnswers"));
+                }
+                catch
+                {
+                    MessageBox.Show("Não foi possível carregar as configurações.\n\nArquivo de configuração possivelmente modificado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    File.Delete(INI_FILE);
+                }
             }
         }
     }

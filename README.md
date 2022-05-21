@@ -12,5 +12,5 @@ Aplicação para criar, salvar e carregar testes multipla escolha.
 <br>
 <br>
 * Downloads: https://github.com/iagocolodetti/TestMaker/releases
-   * [TestMaker.exe](https://github.com/iagocolodetti/TestMaker/releases/download/v1.0/TestMaker.exe "TestMaker.exe")
-   * [Código-Fonte](https://github.com/iagocolodetti/TestMaker/archive/v1.0.zip "v1.0.zip")
+   * [TestMaker.exe](https://github.com/iagocolodetti/TestMaker/releases/download/v1.1/TestMaker.exe "TestMaker.exe")
+   * [Código-Fonte](https://github.com/iagocolodetti/TestMaker/archive/v1.1.zip "v1.1.zip")
