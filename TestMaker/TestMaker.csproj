@@ -68,6 +68,7 @@
     <Compile Include="PreviewTest.Designer.cs">
       <DependentUpon>PreviewTest.cs</DependentUpon>
     </Compile>
+    <Compile Include="RTF.cs" />
     <Compile Include="Test.cs">
       <SubType>Form</SubType>
     </Compile>

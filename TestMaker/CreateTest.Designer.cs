@@ -36,18 +36,18 @@
             this.btnPreviewTest = new System.Windows.Forms.Button();
             this.btnSaveTest = new System.Windows.Forms.Button();
             this.btnRemoveQtn = new System.Windows.Forms.Button();
-            this.gpbAws = new System.Windows.Forms.GroupBox();
+            this.grpAws = new System.Windows.Forms.GroupBox();
             this.rtbAws = new System.Windows.Forms.RichTextBox();
             this.pnlAws = new System.Windows.Forms.Panel();
             this.btnRemoveAws = new System.Windows.Forms.Button();
             this.btAddAws = new System.Windows.Forms.Button();
-            this.gpbQtn = new System.Windows.Forms.GroupBox();
-            this.gpbTest = new System.Windows.Forms.GroupBox();
+            this.grpQtn = new System.Windows.Forms.GroupBox();
+            this.grpTest = new System.Windows.Forms.GroupBox();
             this.btnResetTest = new System.Windows.Forms.Button();
             this.btnLoadTest = new System.Windows.Forms.Button();
-            this.gpbAws.SuspendLayout();
-            this.gpbQtn.SuspendLayout();
-            this.gpbTest.SuspendLayout();
+            this.grpAws.SuspendLayout();
+            this.grpQtn.SuspendLayout();
+            this.grpTest.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblQtnTitle
@@ -142,21 +142,21 @@
             this.btnRemoveQtn.UseVisualStyleBackColor = true;
             this.btnRemoveQtn.Click += new System.EventHandler(this.BtnRemoveQtn_Click);
             // 
-            // gpbAws
+            // grpAws
             // 
-            this.gpbAws.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.grpAws.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.gpbAws.Controls.Add(this.rtbAws);
-            this.gpbAws.Controls.Add(this.pnlAws);
-            this.gpbAws.Controls.Add(this.btnRemoveAws);
-            this.gpbAws.Controls.Add(this.btAddAws);
-            this.gpbAws.Location = new System.Drawing.Point(12, 152);
-            this.gpbAws.Name = "gpbAws";
-            this.gpbAws.Size = new System.Drawing.Size(760, 303);
-            this.gpbAws.TabIndex = 2;
-            this.gpbAws.TabStop = false;
-            this.gpbAws.Text = "Respostas";
+            this.grpAws.Controls.Add(this.rtbAws);
+            this.grpAws.Controls.Add(this.pnlAws);
+            this.grpAws.Controls.Add(this.btnRemoveAws);
+            this.grpAws.Controls.Add(this.btAddAws);
+            this.grpAws.Location = new System.Drawing.Point(12, 152);
+            this.grpAws.Name = "grpAws";
+            this.grpAws.Size = new System.Drawing.Size(760, 303);
+            this.grpAws.TabIndex = 2;
+            this.grpAws.TabStop = false;
+            this.grpAws.Text = "Respostas";
             // 
             // rtbAws
             // 
@@ -204,34 +204,34 @@
             this.btAddAws.UseVisualStyleBackColor = true;
             this.btAddAws.Click += new System.EventHandler(this.BtnAddAws_Click);
             // 
-            // gpbQtn
+            // grpQtn
             // 
-            this.gpbQtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.gpbQtn.Controls.Add(this.btnRemoveQtn);
-            this.gpbQtn.Controls.Add(this.btnNextQtn);
-            this.gpbQtn.Controls.Add(this.btnBackQtn);
-            this.gpbQtn.Controls.Add(this.btnAddQtn);
-            this.gpbQtn.Location = new System.Drawing.Point(12, 461);
-            this.gpbQtn.Name = "gpbQtn";
-            this.gpbQtn.Size = new System.Drawing.Size(279, 88);
-            this.gpbQtn.TabIndex = 7;
-            this.gpbQtn.TabStop = false;
-            this.gpbQtn.Text = "Questão";
+            this.grpQtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.grpQtn.Controls.Add(this.btnRemoveQtn);
+            this.grpQtn.Controls.Add(this.btnNextQtn);
+            this.grpQtn.Controls.Add(this.btnBackQtn);
+            this.grpQtn.Controls.Add(this.btnAddQtn);
+            this.grpQtn.Location = new System.Drawing.Point(12, 461);
+            this.grpQtn.Name = "grpQtn";
+            this.grpQtn.Size = new System.Drawing.Size(279, 88);
+            this.grpQtn.TabIndex = 7;
+            this.grpQtn.TabStop = false;
+            this.grpQtn.Text = "Questão";
             // 
-            // gpbTest
+            // grpTest
             // 
-            this.gpbTest.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.gpbTest.Controls.Add(this.btnResetTest);
-            this.gpbTest.Controls.Add(this.btnPreviewTest);
-            this.gpbTest.Controls.Add(this.btnLoadTest);
-            this.gpbTest.Controls.Add(this.btnSaveTest);
-            this.gpbTest.Location = new System.Drawing.Point(493, 461);
-            this.gpbTest.Name = "gpbTest";
-            this.gpbTest.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.gpbTest.Size = new System.Drawing.Size(279, 88);
-            this.gpbTest.TabIndex = 12;
-            this.gpbTest.TabStop = false;
-            this.gpbTest.Text = "Teste";
+            this.grpTest.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpTest.Controls.Add(this.btnResetTest);
+            this.grpTest.Controls.Add(this.btnPreviewTest);
+            this.grpTest.Controls.Add(this.btnLoadTest);
+            this.grpTest.Controls.Add(this.btnSaveTest);
+            this.grpTest.Location = new System.Drawing.Point(493, 461);
+            this.grpTest.Name = "grpTest";
+            this.grpTest.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.grpTest.Size = new System.Drawing.Size(279, 88);
+            this.grpTest.TabIndex = 12;
+            this.grpTest.TabStop = false;
+            this.grpTest.Text = "Teste";
             // 
             // btnResetTest
             // 
@@ -259,9 +259,9 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(784, 561);
-            this.Controls.Add(this.gpbTest);
-            this.Controls.Add(this.gpbQtn);
-            this.Controls.Add(this.gpbAws);
+            this.Controls.Add(this.grpTest);
+            this.Controls.Add(this.grpQtn);
+            this.Controls.Add(this.grpAws);
             this.Controls.Add(this.rtbQtnTitle);
             this.Controls.Add(this.lblQtnTitle);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
@@ -271,9 +271,9 @@
             this.Text = "Criar Teste (Questão: 0)";
             this.Load += new System.EventHandler(this.CreateTest_Load);
             this.SizeChanged += new System.EventHandler(this.CreateTest_SizeChanged);
-            this.gpbAws.ResumeLayout(false);
-            this.gpbQtn.ResumeLayout(false);
-            this.gpbTest.ResumeLayout(false);
+            this.grpAws.ResumeLayout(false);
+            this.grpQtn.ResumeLayout(false);
+            this.grpTest.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -288,12 +288,12 @@
         private System.Windows.Forms.Button btnPreviewTest;
         private System.Windows.Forms.Button btnSaveTest;
         private System.Windows.Forms.Button btnRemoveQtn;
-        private System.Windows.Forms.GroupBox gpbAws;
+        private System.Windows.Forms.GroupBox grpAws;
         private System.Windows.Forms.Button btnRemoveAws;
         private System.Windows.Forms.Button btAddAws;
         private System.Windows.Forms.Panel pnlAws;
-        private System.Windows.Forms.GroupBox gpbQtn;
-        private System.Windows.Forms.GroupBox gpbTest;
+        private System.Windows.Forms.GroupBox grpQtn;
+        private System.Windows.Forms.GroupBox grpTest;
         private System.Windows.Forms.Button btnResetTest;
         private System.Windows.Forms.Button btnLoadTest;
         private System.Windows.Forms.RichTextBox rtbAws;

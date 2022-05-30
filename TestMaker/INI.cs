@@ -1,8 +1,7 @@
-﻿using System;
-using System.Text;
+﻿using System.Text;
 using System.Runtime.InteropServices;
 
-namespace INI
+namespace TestMaker
 {
     /// <summary>
     /// Create a New INI file to store or load data
